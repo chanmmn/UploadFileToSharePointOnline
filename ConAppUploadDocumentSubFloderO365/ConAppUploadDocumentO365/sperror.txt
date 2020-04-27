@@ -1,0 +1,79 @@
+Error	2	Error occurred in deployment step 'Install app for SharePoint': The provided App differs from another App with the same version and product ID.
+		0	0	SharePointApp2
+
+
+Error	1	Error occurred in deployment step 'Install app for SharePoint': The System Account cannot perform this action.
+		0	0	SharePointApp1
+
+Error	1	To interact with SharePoint projects in Visual Studio, your system user account must have administrator privileges.
+		0	0	SharePointApp1
+
+System.Net.WebException was unhandled by user code
+  HResult=-2146233079
+  Message=The remote server returned an error: (401) Unauthorized.
+  Source=System
+  StackTrace: 
+       at System.Net.HttpWebRequest.GetResponse()
+       at Microsoft.SharePoint.Client.SPWebRequestExecutor.Execute()
+       at Microsoft.SharePoint.Client.ClientRequest.ExecuteQueryToServer(ChunkStringBuilder sb)
+       at Microsoft.SharePoint.Client.ClientRequest.ExecuteQuery()
+       at Microsoft.SharePoint.Client.ClientRuntimeContext.ExecuteQuery()
+       at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+       at SharePointApp1Web._Default.Page_Load(Object sender, EventArgs e) in C:\dev\SharePointApp1\SharePointApp1Web\Pages\Default.aspx.vb:line 26
+       at System.Web.UI.Control.OnLoad(EventArgs e)
+       at System.Web.UI.Control.LoadRecursive()
+       at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+  InnerException: 
+
+System.Net.WebException was unhandled by user code
+  HResult=-2146233079
+  Message=The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel.
+  Source=System
+  StackTrace:
+       at System.Net.HttpWebRequest.GetResponse()
+       at Microsoft.SharePoint.Client.SPWebRequestExecutor.Execute()
+       at Microsoft.SharePoint.Client.ClientRequest.ExecuteQueryToServer(ChunkStringBuilder sb)
+       at Microsoft.SharePoint.Client.ClientRequest.ExecuteQuery()
+       at Microsoft.SharePoint.Client.ClientRuntimeContext.ExecuteQuery()
+       at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+       at SharePointApp2Web._Default.Page_Load(Object sender, EventArgs e) in C:\dev\SharePointApp2\SharePointApp2Web\Pages\Default.aspx.vb:line 26
+       at System.Web.UI.Control.OnLoad(EventArgs e)
+       at System.Web.UI.Control.LoadRecursive()
+       at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+  InnerException: System.Security.Authentication.AuthenticationException
+       HResult=-2146233087
+       Message=The remote certificate is invalid according to the validation procedure.
+       Source=System
+       StackTrace:
+            at System.Net.Security.SslState.StartSendAuthResetSignal(ProtocolToken message, AsyncProtocolRequest asyncRequest, Exception exception)
+            at System.Net.Security.SslState.CheckCompletionBeforeNextReceive(ProtocolToken message, AsyncProtocolRequest asyncRequest)
+            at System.Net.Security.SslState.StartSendBlob(Byte[] incoming, Int32 count, AsyncProtocolRequest asyncRequest)
+            at System.Net.Security.SslState.ProcessReceivedBlob(Byte[] buffer, Int32 count, AsyncProtocolRequest asyncRequest)
+            at System.Net.Security.SslState.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+            at System.Net.Security.SslState.StartReceiveBlob(Byte[] buffer, AsyncProtocolRequest asyncRequest)
+            at System.Net.Security.SslState.CheckCompletionBeforeNextReceive(ProtocolToken message, AsyncProtocolRequest asyncRequest)
+            at System.Net.Security.SslState.StartSendBlob(Byte[] incoming, Int32 count, AsyncProtocolRequest asyncRequest)
+            at System.Net.Security.SslState.ProcessReceivedBlob(Byte[] buffer, Int32 count, AsyncProtocolRequest asyncRequest)
+            at System.Net.Security.SslState.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+            at System.Net.Security.SslState.StartReceiveBlob(Byte[] buffer, AsyncProtocolRequest asyncRequest)
+            at System.Net.Security.SslState.CheckCompletionBeforeNextReceive(ProtocolToken message, AsyncProtocolRequest asyncRequest)
+            at System.Net.Security.SslState.StartSendBlob(Byte[] incoming, Int32 count, AsyncProtocolRequest asyncRequest)
+            at System.Net.Security.SslState.ProcessReceivedBlob(Byte[] buffer, Int32 count, AsyncProtocolRequest asyncRequest)
+            at System.Net.Security.SslState.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+            at System.Net.Security.SslState.StartReceiveBlob(Byte[] buffer, AsyncProtocolRequest asyncRequest)
+            at System.Net.Security.SslState.CheckCompletionBeforeNextReceive(ProtocolToken message, AsyncProtocolRequest asyncRequest)
+            at System.Net.Security.SslState.StartSendBlob(Byte[] incoming, Int32 count, AsyncProtocolRequest asyncRequest)
+            at System.Net.Security.SslState.ForceAuthentication(Boolean receiveFirst, Byte[] buffer, AsyncProtocolRequest asyncRequest)
+            at System.Net.Security.SslState.ProcessAuthentication(LazyAsyncResult lazyResult)
+            at System.Net.TlsStream.CallProcessAuthentication(Object state)
+            at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+            at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+            at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+            at System.Net.TlsStream.ProcessAuthentication(LazyAsyncResult result)
+            at System.Net.TlsStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+            at System.Net.PooledStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+            at System.Net.ConnectStream.WriteHeaders(Boolean async)
+       InnerException: 
+
+
+

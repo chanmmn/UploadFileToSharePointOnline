@@ -1,0 +1,7 @@
+c:\dev\ConAppUploadDocumentO365\ConAppUploadDocumentO365\bin\Debug\ConAppUploadDocumentO365.exe.config
+c:\dev\ConAppUploadDocumentO365\ConAppUploadDocumentO365\obj\Debug\ConAppUploadDocumentO365.csprojResolveAssemblyReference.cache
+c:\dev\ConAppUploadDocumentO365\ConAppUploadDocumentO365\bin\Debug\sperror.txt
+c:\dev\ConAppUploadDocumentO365\ConAppUploadDocumentO365\bin\Debug\ConAppUploadDocumentO365.exe
+c:\dev\ConAppUploadDocumentO365\ConAppUploadDocumentO365\bin\Debug\ConAppUploadDocumentO365.pdb
+c:\dev\ConAppUploadDocumentO365\ConAppUploadDocumentO365\obj\Debug\ConAppUploadDocumentO365.exe
+c:\dev\ConAppUploadDocumentO365\ConAppUploadDocumentO365\obj\Debug\ConAppUploadDocumentO365.pdb
